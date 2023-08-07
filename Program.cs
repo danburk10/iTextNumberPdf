@@ -1,8 +1,5 @@
 ﻿using iTextSharp.text;
 using iTextSharp.text.pdf;
-// using System.Drawing;
-using System.Reflection.PortableExecutable;
-using System.Xml.Linq;
 
 
 
@@ -31,7 +28,6 @@ internal class Program
         }
 
 
-        //AddPageNumber("C:\\Users\\dan\\Downloads\\test.pdf", "C:\\Users\\dan\\Downloads\\test.out.pdf");
         // Check if arguments were provided
         if (args.Length >= 2)
         {
