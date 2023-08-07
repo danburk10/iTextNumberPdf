@@ -6,7 +6,7 @@ using System.Xml.Linq;
 
 
 
-internal class iTextNumberPdf
+internal class Program
 {
     private static void Main(string[] args)
     {
