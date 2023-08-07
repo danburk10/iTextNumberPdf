@@ -31,12 +31,22 @@ internal class Program
         }
 
 
-        AddPageNumber("C:\\Users\\dan\\Downloads\\test.pdf", "C:\\Users\\dan\\Downloads\\test.out.pdf");
-        /* 
-        if (args[0] = 2 && args[1] != null && args[2] != null)
+        //AddPageNumber("C:\\Users\\dan\\Downloads\\test.pdf", "C:\\Users\\dan\\Downloads\\test.out.pdf");
+        // Check if arguments were provided
+        if (args.Length >= 2)
         {
-            AddPageNumber(args[1], args[2] "C:\\Users\\dan\\Downloads\\2023-06 ELD driver log.out.pdf");
+            string inputFile = args[0];
+            string outputFile = args[1];
+
+            // Call the AddPageNumber function with provided input and output paths
+            AddPageNumber(inputFile, outputFile);
+
+            Console.WriteLine("Page numbers added to the PDF.");
         }
-        */
+        else
+        {
+            Console.WriteLine("Usage: Program.exe input.pdf output.pdf");
+        }
+
     }
 }
